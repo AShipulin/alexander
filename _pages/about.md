@@ -16,70 +16,79 @@ last_modified_at: 2020-03-23T14:07:54-04:00
 toc: true
 ---
 
-Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your personal site, blog, or portfolio on GitHub or self-hosting on your own server. As the name implies --- styling is purposely minimalistic to be enhanced and customized by you :smile:.
+родился 25 сентября 1979 г.,
+кандидат технических наук, доцент кафедры управления эксплуотационной работы,
+руководитель департамента развития транспортного холдинга.
 
-{% include gallery id="layouts_gallery" caption="Examples of included layouts `splash`, `single`, and `archive`." %}
+## Биография в сфере ИТ
 
-[Install the Theme]({{ "/docs/quick-start-guide/" | relative_url }}){: .btn .btn--success .btn--large}
+В 1991 родители подарили первый компютер "Кворум"
+с этого момента я погрузился в свою мечту ИТ технологи :smile:.
 
-## Notable Features
+Начал изучать Fortran, затем переключился на Basic.
+На нем написал программу аналог игры электроника "Веселый повар".
 
-- Bundled as a "theme gem" for easier install/upgrading.
-- Compatible with GitHub Pages.
-- Support for Jekyll's built-in Sass/SCSS preprocessor.
-- Nine different skins (color variations).
-- Several responsive layout options (single, archive index, search, splash, and paginated home page).
-- Optimized for search engines with support for [Twitter Cards](https://dev.twitter.com/cards/overview) and [Open Graph](http://ogp.me/) data
-- Optional [header images](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#headers), [custom sidebars](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#sidebars), [table of contents](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#table-of-contents), [galleries](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery), related posts, [breadcrumb links](https://mmistakes.github.io/minimal-mistakes/docs/configuration/#breadcrumb-navigation-beta), [navigation lists](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#navigation-list), and more.
-- Commenting support (powered by [Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), [Discourse](https://www.discourse.org/), [utterances](https://utteranc.es/), static-based via [Staticman v1 and v2](https://staticman.net/), and custom).
-- [Google Analytics](https://www.google.com/analytics/) support.
-- UI localized text in English (default), Brazilian Portuguese (Português brasileiro), Catalan, Chinese, Danish, Dutch, Finnish, French (Français), German (Deutsch), Greek, Hindi (हिंदी), Hungarian, Indonesian, Irish (Gaeilge), Italian (Italiano), Japanese, Korean, Malayalam, Nepali (Nepalese), Persian (فارسی), Polish, Punjabi (ਪੰਜਾਬੀ), Romanian, Russian, Slovak, Spanish (Español), Swedish, Thai, Turkish (Türkçe), and Vietnamese.
+Модернзировал компьюте:
+- сменил систему ввода вывода с магнитной ленты на дисковод 5.25 дюйма
+- установил матричный принтер Epson 100
+- адоптировал чернобелый телевизор "Расвет" под монитор
 
-## Demo Pages
+В 1995 году лето проработал разнорабочим (красил очистыные соружения кубаслаком, крыл крыши толью, строил бетонные гаражаи, собирал мебель и т.д.) заработал несколько коробок сугщеного молока, к зиме реализовал их через магазин.
+В Новый год на ВДНХ купил первый x86 Intel Pentium 77 с цветным монитром.
 
-| Name                                        | Description                                           |
-| ------------------------------------------- | ----------------------------------------------------- |
-| [Post with Header Image][header-image-post] | A post with a large header image. |
-| [HTML Tags and Formatting Post][html-tags-post] | A variety of common markup showing how the theme styles them. |
-| [Syntax Highlighting Post][syntax-post] | Post displaying highlighted code. |
-| [Post with a Gallery][gallery-post] | A post showing several images wrapped in `<figure>` elements. |
-| [Sample Collection Page][sample-collection] | Single page from a collection. |
-| [Categories Archive][categories-archive] | Posts grouped by category. |
-| [Tags Archive][tags-archive] | Posts grouped by tag. |
+## ООО Холдинг "СТРАТЕГ"
 
-For even more demo pages check the [posts archive][year-archive].
+Управляющая компания, под контролем находятся транспортные компании: Урал-Контейнер, Желдоринтеграция, Автоколонна 1212, Трансмеханизация и др.
 
-[header-image-post]: {{ "" | relative_url }}{% post_url 2012-03-15-layout-header-image-text-readability %}
-[gallery-post]: {{ "" | relative_url }}{% post_url 2010-09-09-post-gallery %}
-[html-tags-post]: {{ "" | relative_url }}{% post_url 2013-01-11-markup-html-tags-and-formatting %}
-[syntax-post]: {{ "" | relative_url }}{% post_url 2013-08-16-markup-syntax-highlighting %}
-[sample-collection]: {{ "/recipes/chocolate-chip-cookies/" | relative_url }}
-[categories-archive]: {{ "/categories/" | relative_url }}
-[tags-archive]: {{ "/tags/" | relative_url }}
-[year-archive]: {{ "/year-archive/" | relative_url }}
+| Стаж | Дата начала |
+| --- | --- |
+| более 6 лет | с января 2013, по настоящее время |
 
----
+Начальник департамента информационных технологий
 
-## Credits
+Направление работ: разработка бизнес-приложений (собственные учетные системы), используемых в группе компаний, оптимизация функционирования информационных систем, разработка и внедрение бизнес-процессов, оптимизация и настройка системы продаж.
 
-### Icons + Demo Images:
-
-- [The Noun Project](https://thenounproject.com) -- Garrett Knoll, Arthur Shlain, and [tracy tam](https://thenounproject.com/tracytam)
-- [Font Awesome](http://fontawesome.io/)
-- [Unsplash](https://unsplash.com/)
-
-### Other:
-
-- [Jekyll](https://jekyllrb.com/)
-- [jQuery](https://jquery.com/)
-- [Susy](http://susy.oddbird.net/)
-- [Breakpoint](http://breakpoint-sass.com/)
-- [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/)
-- [FitVids.JS](http://fitvidsjs.com/)
-- Greedy Navigation - [lukejacksonn](https://codepen.io/lukejacksonn/pen/PwmwWV)
-- [jQuery Smooth Scroll](https://github.com/kswedberg/jquery-smooth-scroll)
-- [Lunr](http://lunrjs.com)
+Основные обязанности:
+- описание бизнес-процессов с использованием различных CASE средств
+  (BPMN, IDEF, Сценарии использования);
+- разработка технический заданий на программные продукты, а также их доработка;
+- проектирование и сопровождение информационных учетных систем
+   (ERP, CRM, CMS, TMS, WMS) по автоматизации деятельности предприятия;
+- внедрение собственных и сторонних (1С, Битрикс24) информационных систем;
+- сопровождение действующих информационных систем собственной разработки,
+  оперативное устранение отказов;
+- проектирование и развертывание баз данных Microsoft SQL Server,
+  написание DMX, T-SQL запросов, развертывание репликаций;
+- разработка на платформе 1С собственных конфигураций, доработка существующих
+   (Бухгалтерия, Комплексная автоматизация, Управление автотранспортом,
+   Автосервис+Автозапчасти, Управление торговлей);
+- взаимодействие с поставщиками по вопросам разработки программного обеспечения,
+   закупки и поставки оборудования  (поиск, отбор, заключение договоров, контроль обязательств);
+- анализ потребностей департаментов, отделов,
+  пользователей в сфере информационных технологий и
+  оптимизации бизнес-процессов;
+- разработка и формирование аналитических отчетов с использованием технологий BI
+  (MS BI, MS OLAP, MS PowerView, MS PowerPivot, QuickView);
+- оптимизация расходов на мобильную, стационарную связь и интернет;
+- контроль лицензирования программных продуктов;
+- планирование бюджета;
+- общее руководство деятельностью сотрудников отдела (постановка и контроль задач и т.п.).
 
 ---
 
-Minimal Mistakes is designed, developed, and maintained by Michael Rose. Just another boring, tattooed, designer from Buffalo New York.
+## Ссылки
+
+### Demo:
+
+- [demo.arctl.ru](https://demo.arctl.ru)
+
+### Сайт компаний в разработке котрых я принимал участие:
+
+- Урал-Контейнер [ucont.ru](https://ucont.ru
+- Автоколонна 1212 [ak1212.ru](https://ak1212.ru)
+- АРК: Транспортная логистика Online [arctl.ru](http://arctl.ru)
+- АРК: Документация [docs.arctl.ru](http://docs.arctl.ru)
+
+---
+
+Если Вы прочитали, это очень здоров Спасибо.
