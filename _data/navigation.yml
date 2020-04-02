@@ -20,16 +20,16 @@ foo:
 
 # main links
 main:
-  - title: "Quick-Start Guide"
+  - title: "Руководство"
     url: /docs/quick-start-guide/
   - title: "По годам"
     url: /year-archive/
   - title: "По коллекциям"
     url: /collection-archive/
-  - title: "Terms &amp; Privacy Policy"
-    url: /terms/
   - title: "Обо мне"
     url: /about/
+  - title: "Privacy Policy"
+    url: /terms/
 
 
 # documentation links
