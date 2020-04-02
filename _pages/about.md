@@ -12,7 +12,7 @@ layouts_gallery:
   - url: /assets/images/mm-layout-archive.png
     image_path: /assets/images/mm-layout-archive.png
     alt: "archive layout example"
-last_modified_at: 2020-03-23T14:07:54-04:00
+last_modified_at: 2020-04-01T11:27:00-00:00
 toc: true
 ---
 
@@ -28,7 +28,7 @@ toc: true
 Начал изучать Fortran, затем переключился на Basic.
 На нем написал программу аналог игры электроника "Веселый повар".
 
-Модернзировал компьюте:
+Модернзировал компьютер:
 - сменил систему ввода вывода с магнитной ленты на дисковод 5.25 дюйма
 - установил матричный принтер Epson 100
 - адоптировал чернобелый телевизор "Расвет" под монитор
