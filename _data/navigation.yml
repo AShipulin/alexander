@@ -76,7 +76,7 @@ docs:
         url: /docs/stylesheets/
       - title: "JavaScript"
         url: /docs/javascript/
-  - title: Postgres
+  - title: Meta
     children:
       - title: "History"
         url: /docs/history/
@@ -88,8 +88,6 @@ docs:
         url: /docs/license/
       - title: "Terms &amp; Privacy Policy"
         url: /terms/
-      - title: "Tablespace"
-        url: /docs/pg_tablespace/
 
 # sidebar navigation list sample
 sidebar-sample:
