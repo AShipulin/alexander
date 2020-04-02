@@ -22,14 +22,14 @@ foo:
 main:
   - title: "Quick-Start Guide"
     url: /docs/quick-start-guide/
-  - title: "Обо мне"
-    url: /about/
-  - title: "Sample Posts"
+  - title: "По годам"
     url: /year-archive/
-  - title: "Sample Collections"
+  - title: "По коллекциям"
     url: /collection-archive/
   - title: "Terms &amp; Privacy Policy"
     url: /terms/
+  - title: "Обо мне"
+    url: /about/
 
 
 # documentation links
