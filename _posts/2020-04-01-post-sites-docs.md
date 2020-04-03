@@ -25,6 +25,8 @@ https://github.com/mmistakes/minimal-mistakes
 - Заполнить название
 - Контактные данные
 - Разместить логотип
+- # Social Sharing
+-
 
 ```
 # Тема
@@ -61,16 +63,17 @@ portfolio, pets, recipes в
 
 ### Удалить posts
 
-- при удалении `2010-09-09-post-gallery` удалить ссылку в _docs\14-helpers.md
+- при удалении `2010-09-09-post-gallery` удалить ссылку в `_docs\14-helpers.md`
 - Кроме `_posts\9999-12-31-post-future-date.md`
 
 
 ### Настроить поиск
 
 - https://cse.google.com/cse/all
-- получить код для сайта
-```
-<script async src="https://cse.google.com/cse.js?cx=003839802267575350869:waqqaezqhrx"></script>
-<div class="gcse-search"></div>
-```
--
+- получить код для сайта `https://cse.google.com/cse.js?` код
+- search_engine_id : код
+
+### Настроить аналитику
+
+- https://analytics.google.com/analytics/web/#/
+- 

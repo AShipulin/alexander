@@ -53,7 +53,7 @@ google:
   search_engine_id       : "cx=003839802267575350869:waqqaezqhrx" # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification : 
+google_site_verification :
 bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
@@ -65,7 +65,7 @@ files_to_exclude         : #- _posts/2017-11-28-post-exclude-search.md
 twitter:
   username               : &twitter "avshipulin"
 facebook:
-  username               : &facebook "100002151811700"
+  username               : &facebook "shipulin.alexander"
   app_id                 :
   publisher              :
 og_image                 : "/assets/images/site-logo.png" # Open Graph/Twitter default site image
@@ -75,14 +75,14 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - "https://twitter.com/mmistakes"
-    - "https://www.facebook.com/michaelrose"
+    - "https://twitter.com/avshipulin"
+    - "https://www.facebook.com/shipulin.alexander"
 
 # Analytics
 analytics:
   provider               : "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : #"UA-2011187-3" # Replace this with your ID, or delete
+    tracking_id          : "UA-162761825-1" #"UA-2011187-3" # Replace this with your ID, or delete
     anonymize_ip         : #true
 
 
@@ -104,7 +104,7 @@ author:
       url: "https://www.instagram.com/alexander.shipulin/"
     - label: "facebook"
       icon: "fab fa-fw fa-facebook"
-      url: "https://web.facebook.com/profile.php?id=100002151811700"
+      url: "https://web.facebook.com/shipulin.alexander"
 
 
 # Site Footer
@@ -121,7 +121,7 @@ footer:
       url: "https://www.instagram.com/alexander.shipulin/"
     - label: "facebook"
       icon: "fab fa-fw fa-facebook"
-      url: "https://web.facebook.com/profile.php?id=100002151811700"
+      url: "https://web.facebook.com/shipulin.alexander"
 
 
 # Reading Files
@@ -229,7 +229,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Yekaterinburg # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
