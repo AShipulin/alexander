@@ -35,8 +35,8 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "ru-RU"
 title                    : "Название"
 title_separator          : "-"
-subtitle                 : "доцент, к.т.н"
-name                     : &name "Александр Шипулин" # &name is a YAML anchor which can be *referenced later
+subtitle                 : ""
+name                     : &name "" # &name is a YAML anchor which can be *referenced later
 ```
 
 ### Установить русский язык
