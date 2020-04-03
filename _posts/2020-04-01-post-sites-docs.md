@@ -65,6 +65,12 @@ portfolio, pets, recipes в
 - Кроме `_posts\9999-12-31-post-future-date.md`
 
 
+### Настроить поиск
 
-7343.58 ₽в месяц
-10247.63 ₽в месяц
+- https://cse.google.com/cse/all
+- получить код для сайта
+```
+<script async src="https://cse.google.com/cse.js?cx=003839802267575350869:waqqaezqhrx"></script>
+<div class="gcse-search"></div>
+```
+-
