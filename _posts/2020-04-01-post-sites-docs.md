@@ -26,7 +26,7 @@ https://github.com/mmistakes/minimal-mistakes
 - Контактные данные
 - Разместить логотип
 - # Social Sharing
--
+- timezone: Asia/Yekaterinburg
 
 ```
 # Тема
@@ -76,4 +76,4 @@ portfolio, pets, recipes в
 ### Настроить аналитику
 
 - https://analytics.google.com/analytics/web/#/
-- 
+-
