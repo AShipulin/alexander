@@ -1,7 +1,10 @@
 ---
-title: "Quick-Start Guide"
-permalink: /docs/quick-start-guide/
+title: "Руководсто"
+permalink: /docs/guide/
 redirect_from:
   - /theme-setup/
 toc: true
 ---
+
+Раздел содержит руководства (инструкции) используемые работе.
+Отвественность за использование этих инструкции остается за Вами.
