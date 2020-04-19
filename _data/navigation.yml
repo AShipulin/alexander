@@ -30,18 +30,18 @@ docs:
   - title: Ubuntu
     children:
       - title: "install-nginx"
-        url: /docs/ubuntu/install-nginx.md
+        url: /docs/ubuntu/install-nginx
       - title: "install-postgresql"
-        url: /docs/ubuntu/install-postgresql.md
+        url: /docs/ubuntu/install-postgresql
       - title: "install-redmine"
-        url: /docs/ubuntu/install-redmine.md
+        url: /docs/ubuntu/install-redmine
       - title: "install-youtrack"
-        url: /docs/ubuntu/install-youtrack.md
+        url: /docs/ubuntu/install-youtrack
       - title: "install-zabbix"
-        url: /docs/ubuntu/install-zabbix.md
-      - title: "- install-zabbix-agent-linux"
-        url: /docs/ubuntu/install-zabbix-agent-linux.md
-      - title: "- install-zabbix-agent-windows"
-        url: /docs/ubuntu/install-zabbix-agent-windows.md
-      - title: "- install-zabbix-pg-monitoring"
-        url: /docs/ubuntu/install-zabbix-pg-monitoring.md
+        url: /docs/ubuntu/install-zabbix
+      - title: "- agent-linux"
+        url: /docs/ubuntu/install-zabbix-agent-linux
+      - title: "- agent-windows"
+        url: /docs/ubuntu/install-zabbix-agent-windows
+      - title: "- pg-monitoring"
+        url: /docs/ubuntu/install-zabbix-pg-monitoring

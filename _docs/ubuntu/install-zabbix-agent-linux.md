@@ -1,3 +1,9 @@
+---
+title: "install-zabbix-agent-linux"
+permalink: /docs/ubuntu/install-zabbix-agent-linux/
+toc: true
+---
+
 # Установка (install) Zabbix Agent
 
 [Zabbix Агенты](https://www.zabbix.com/ru/download_agents)

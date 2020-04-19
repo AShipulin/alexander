@@ -1,3 +1,9 @@
+---
+title: "install-zabbix-pg-monitoring"
+permalink: /docs/ubuntu/install-zabbix-pg-monitoring/
+toc: true
+---
+
 # Template DB PostgreSQL
 
 [zabbix.com - Postgresql](https://www.zabbix.com/integrations/postgresql)
