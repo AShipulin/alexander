@@ -2,6 +2,7 @@
 title: "Пример контента"
 layout: archive
 permalink: /еxample-content/
+toc: true
 ---
 
 A variety of common markup showing how the theme styles them.
