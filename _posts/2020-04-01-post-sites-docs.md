@@ -1,6 +1,7 @@
 ---
 title: "Публикация: Равертывание сайта документации"
 date: 2020-04-03
+toc: true
 categories:
   - Post
 tags:

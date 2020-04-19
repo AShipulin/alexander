@@ -1,6 +1,7 @@
 ---
-title: "Post: Новые публикации"
+title: "Публикация: Новые"
 date: 2020-12-31
+toc: true
 categories:
   - Post
 ---
