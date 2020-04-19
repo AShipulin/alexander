@@ -1,7 +1,7 @@
 ---
 permalink: /terms/
-title: "Privacy Policy"
-last_modified_at: 2017-10-20T12:42:38-04:00
+title: "Условия и политика использования"
+last_modified_at: 2020-04-20T12:00:00-00:00
 toc: true
 ---
 
