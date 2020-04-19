@@ -1,6 +1,6 @@
 ---
 title: "install-redmine"
-permalink: /docs//ubuntu/install-redmine/
+permalink: /docs/ubuntu/install-redmine/
 toc: true
 ---
 

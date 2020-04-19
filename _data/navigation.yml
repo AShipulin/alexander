@@ -39,12 +39,9 @@ docs:
         url: /docs/ubuntu/install-youtrack.md
       - title: "install-zabbix"
         url: /docs/ubuntu/install-zabbix.md
-
-  - title: "install-zabbix"
-    children:
-      - title: "install-zabbix-agent-linux"
+      - title: "- install-zabbix-agent-linux"
         url: /docs/ubuntu/install-zabbix-agent-linux.md
-      - title: "install-zabbix-agent-windows"
+      - title: "- install-zabbix-agent-windows"
         url: /docs/ubuntu/install-zabbix-agent-windows.md
-      - title: "install-zabbix-pg-monitoring"
+      - title: "- install-zabbix-pg-monitoring"
         url: /docs/ubuntu/install-zabbix-pg-monitoring.md
