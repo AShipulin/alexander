@@ -1,6 +1,6 @@
 ---
 title: "Пример контента"
-permalink: /еxample-content/
+permalink: /example-content/
 toc: true
 ---
 
