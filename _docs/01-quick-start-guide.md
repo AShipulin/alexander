@@ -1,5 +1,5 @@
 ---
-title: "Руководсто"
+title: "Инструкции"
 permalink: /docs/guide/
 redirect_from:
   - /theme-setup/
