@@ -1,6 +1,6 @@
 ---
 title: "syntax-post"
 permalink: /syntax-post/
-layout: tags
+layout: syntax-post
 author_profile: true
 ---
