@@ -31,7 +31,7 @@ main:
   - title: "по тегам"
     url: /tag-archive/
   - title: "Архив страниц"
-    url: /pages-archive/
+    url: /page-archive/
   - title: "Обо мне"
     url: /about/
   - title: "Условия"
