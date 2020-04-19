@@ -22,18 +22,20 @@ foo:
 main:
   - title: "Инструкции"
     url: /docs/guide/
+  - title: "Публикации"
+    url: /home/
   - title: "По годам"
     url: /year-archive/
-  - title: "по коллекциям"
+  - title: "По коллекциям"
     url: /collection-archive/
-  - title: "по категориям"
+  - title: "По категориям"
     url: /categories-archive/
-  - title: "по тегам"
+  - title: "По тегам"
     url: /tag-archive/
   - title: "Архив страниц"
     url: /page-archive/
   - title: "Карта сайта"
-    url: /sitemap/    
+    url: /sitemap/
   - title: "Обо мне"
     url: /about/
   - title: "Условия"
