@@ -4,8 +4,8 @@ date: 2020-04-03
 categories:
   - Post Formats
 tags:
-  - gallery
-  - Post Formats
+  - sites
+  - mmistakes
   - tiled
 ---
 
@@ -76,4 +76,9 @@ portfolio, pets, recipes в
 ### Настроить аналитику
 
 - https://analytics.google.com/analytics/web/#/
+-
+
+### Можно удалить не нужные страцицы
+- home
+- lorem-ipsum
 -
