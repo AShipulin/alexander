@@ -35,6 +35,8 @@ docs:
         url: /docs/ubuntu/install-postgresql.md
       - title: "install-redmine"
         url: /docs/ubuntu/install-redmine.md
+      - title: "install-youtrack"
+        url: /docs/ubuntu/install-youtrack.md
       - title: "install-zabbix"
         url: /docs/ubuntu/install-zabbix.md
 

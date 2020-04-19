@@ -1,3 +1,9 @@
+---
+title: "install-zabbix"
+permalink: /docs//ubuntu/install-zabbix/
+toc: true
+---
+
 # Установка (install) Zabbix
 
 Устанавливаем Zabbix с использованием:

@@ -1,3 +1,9 @@
+---
+title: "install-youtrack"
+permalink: /docs//ubuntu/install-youtrack/
+toc: true
+---
+
 # Установка (Install) Youtrack
 
 ## Подготовка

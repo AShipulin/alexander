@@ -1,6 +1,6 @@
 ---
 title: "install-postgresql"
-permalink: /docs/install-postgresql/
+permalink: /docs//ubuntu/install-postgresql/
 toc: true
 ---
 
