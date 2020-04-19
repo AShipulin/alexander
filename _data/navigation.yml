@@ -25,7 +25,7 @@ main:
   - title: "По годам"
     url: /year-archive/
   - title: "По тегам"
-    url: /year-tags/    
+    url: /tag-archive/
   - title: "По коллекциям"
     url: /collection-archive/
   - title: "Обо мне"
