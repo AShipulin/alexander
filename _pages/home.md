@@ -1,5 +1,5 @@
 ---
 permalink: /home/
-layout: archive
+layout: home
 author_profile: true
 ---
