@@ -1,6 +1,5 @@
 ---
 title: "Пример контента"
-layout: archive
 permalink: /еxample-content/
 toc: true
 ---

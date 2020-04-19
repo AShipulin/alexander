@@ -32,6 +32,8 @@ main:
     url: /tag-archive/
   - title: "Архив страниц"
     url: /page-archive/
+  - title: "Карта сайта"
+    url: /sitemap/    
   - title: "Обо мне"
     url: /about/
   - title: "Условия"
