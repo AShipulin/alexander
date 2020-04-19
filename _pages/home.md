@@ -1,0 +1,4 @@
+---
+permalink: /home/
+layout: home
+---
