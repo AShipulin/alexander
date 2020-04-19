@@ -1,3 +1,9 @@
+---
+title: "install-redmine"
+permalink: /docs/install-redmine/
+toc: true
+---
+
 # Redmine
 
 ## Настройка отправки уведомлений

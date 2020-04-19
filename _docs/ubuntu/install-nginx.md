@@ -1,3 +1,9 @@
+---
+title: "install-nginx"
+permalink: /docs/install-nginx/
+toc: true
+---
+
 # Установка Ubunt и подключение
 
 	1. Установить сервер Ubunt lts

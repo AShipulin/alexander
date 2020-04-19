@@ -1,3 +1,9 @@
+---
+title: "install-postgresql"
+permalink: /docs/install-postgresql/
+toc: true
+---
+
 # Установка (Install) PostgreSQL
 
 ## Подготовка
