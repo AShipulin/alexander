@@ -24,10 +24,14 @@ main:
     url: /docs/guide/
   - title: "По годам"
     url: /year-archive/
-  - title: "По тегам"
-    url: /tag-archive/
-  - title: "По коллекциям"
+  - title: "по коллекциям"
     url: /collection-archive/
+  - title: "по категориям"
+    url: /categories-archive/
+  - title: "по тегам"
+    url: /tag-archive/
+  - title: "Архив страниц"
+    url: /pages-archive/
   - title: "Обо мне"
     url: /about/
   - title: "Условия"

@@ -2,11 +2,11 @@
 title: "Публикация: Равертывание сайта документации"
 date: 2020-04-03
 categories:
-  - Post Formats
+  - Post
 tags:
   - sites
   - mmistakes
-  - tiled
+  - Jekyll
 ---
 
 Цель. Создасть Сайт содержащий раздел новости и руководство пользователя,
@@ -78,7 +78,14 @@ portfolio, pets, recipes в
 - https://analytics.google.com/analytics/web/#/
 -
 
-### Можно удалить не нужные страцицы
-- home
-- lorem-ipsum
--
+### Можно удалить не нужные страцицы и _docs
+- /home
+- /lorem-ipsum
+- /tags/markup/
+- /page-a
+- /page-b
+- /post-archive-feature-rows (если нужны галереи фото то оставить как образец)
+- /splash-page
+
+## Пример кода страницы /еxample-content/
+- /еxample-content/
