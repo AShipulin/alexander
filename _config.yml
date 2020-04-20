@@ -10,7 +10,7 @@ title                    : "Александр Шипулин"
 title_separator          : "-"
 subtitle                 : "доцент, к.т.н"
 name                     : &name "Александр Шипулин" # &name is a YAML anchor which can be *referenced later
-description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
+description              : &description "Сайт содержит инструкции, публикации и информацию об авторе"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "ashipulin/pages"
