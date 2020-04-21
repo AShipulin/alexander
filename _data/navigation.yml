@@ -7,9 +7,9 @@ main:
   - title: "По годам"
     url: /year-archive/
   - title: "По категориям"
-    url: /categories-archive/
+    url: /categories/
   - title: "По тегам"
-    url: /tag-archive/
+    url: /tags/
   - title: "Архив страниц"
     url: /page-archive/
   - title: "По коллекциям"
