@@ -3,7 +3,7 @@ main:
   - title: "Инструкции"
     url: /docs/guide/
   - title: "Публикации"
-    url: /home/
+    url: /
   - title: "По годам"
     url: /year-archive/
   - title: "По категориям"
