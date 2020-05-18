@@ -1,5 +1,5 @@
 ---
-title: "Публикация: Удаление оранизаций из базы 1С"
+title: "Публикация: Получение даных в Power BI из 1С через канал OData"
 date: 2020-04-21
 toc: true
 categories:
@@ -11,11 +11,9 @@ tags:
 ---
 
 ## Цель
-Загрузить в Power BI данные напрямую из 1С
+Получить на прямую даных в Power BI из 1С через канал OData
 
-## Публикую 1C на WEB для использования ODATA
-
-### Установить IIS
+## Установить IIS
 - Общие функции HTTP (Common HTTP Features)
   - Статическое содержимое (Static Content)
   - Документ по умолчанию (Default Document)
@@ -33,10 +31,10 @@ tags:
 - Средства управления (Management Tools)
   - Консоль управления IIS (IIS Management Console)
 
-### Установить 1С
+## Установить 1С
 - WEB расширениея
 
-### Настроить IIS
+## Настроить IIS
 - Пользователю IIS_User предоставить полный доступ:
   - wsisapi.dll в паке C:\Program Files\1cv8
   - C:\inetpub\wwwroot\
