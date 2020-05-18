@@ -1,3 +1,9 @@
+---
+title: "upgrade"
+permalink: /docs/ubuntu/upgrade/
+toc: true
+---
+
 # Обновление (upgrade) Ubuntu до новой версии
 
 [Релиз Ubuntu](https://wiki.ubuntu.com/BionicBeaver/ReleaseNotes?)

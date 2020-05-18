@@ -1,3 +1,9 @@
+---
+title: "memory"
+permalink: /docs/ubuntu/memory/
+toc: true
+---
+
 # Память (memory)
 
 ## Использование оперативной памяти

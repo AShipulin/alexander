@@ -1,3 +1,9 @@
+---
+title: "swap"
+permalink: /docs/ubuntu/swap/
+toc: true
+---
+
 # Подкачка swapiness
 
 Свободная память

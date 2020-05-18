@@ -29,6 +29,14 @@ docs:
 
   - title: Ubuntu
     children:
+      - title: "upgrade"
+        url: /docs/ubuntu/upgrade
+      - title: "memory"
+        url: /docs/ubuntu/memory
+      - title: "swap"
+        url: /docs/ubuntu/swap
+      - title: "mount"
+        url: /docs/ubuntu/mount
       - title: "install-nginx"
         url: /docs/ubuntu/install-nginx
       - title: "install-postgresql"
