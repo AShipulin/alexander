@@ -12,8 +12,8 @@ toc: true
 
 ### Установите репозиторий Zabbix:
 ```
-sudo wget https://repo.zabbix.com/zabbix/4.4/ubuntu/pool/main/z/zabbix-release/zabbix-release_4.4-1+bionic_all.deb
-sudo dpkg -i zabbix-release_4.4-1+bionic_all.deb
+sudo wget https://repo.zabbix.com/zabbix/5.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_5.0-1+focal_all.deb
+sudo dpkg -i zabbix-release_5.0-1+focal_all.deb
 sudo apt update
 ```
 
@@ -30,7 +30,7 @@ sudo nano /etc/zabbix/zabbix_agentd.conf
 указать
 ```
 Server=[IP-ADDRESS]
-ServerActive=[IP-ADDRESS ZABBIX Сервера]
+ServerActive=[IP-ADDRESS]
 Hostname=[HOSTNAME]
 ```
 где [IP-ADDRESS] - адрес zabbix сервера;
