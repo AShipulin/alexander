@@ -10,7 +10,7 @@ toc: true
 - nginx
 - PostgreSQL
 
-[Документация на .zabbix.co](https://www.zabbix.com/ru/download?zabbix=4.4&os_distribution=ubuntu&os_version=18.04_bionic&db=postgresql)
+[Документация на zabbix.com](https://www.zabbix.com/ru/download?zabbix=4.4&os_distribution=ubuntu&os_version=18.04_bionic&db=postgresql)
 
 ## Подготовка
 ```
@@ -24,83 +24,106 @@ sudo locale-gen ru_RU.UTF-8
 sudo apt install traceroute
 ```
 
-## Установите репозиторий Zabbix:
+## Установка репозитория Zabbix:
+
+[Выбрать плтформу на zabbix.com](https://www.zabbix.com/ru/download)
+
 ```
-sudo wget https://repo.zabbix.com/zabbix/4.4/ubuntu/pool/main/z/zabbix-release/zabbix-release_4.4-1+bionic_all.deb
-sudo dpkg -i zabbix-release_4.4-1+bionic_all.deb
+sudo wget https://repo.zabbix.com/zabbix/5.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_5.0-1+bionic_all.deb
+sudo dpkg -i zabbix-release_5.0-1+bionic_all.deb
 sudo apt update
 ```
 
-### Установка apache2, php:
+### Установка zabbix-server, frontend, php, nginx, agent:
+
+Возможно потребуется установить php
 ```
-# sudo apt install nginx php-fpm
 sudo apt install php
-sudo apt -y install zabbix-nginx-conf
-sudo apt -y install zbx_monitor
-sudo apt install
 ```
 
-## Установите Zabbix сервер, веб-интерфейс и агент:
+установка компонентов
 ```
 sudo apt -y install zabbix-server-pgsql zabbix-frontend-php zabbix-nginx-conf php-pgsql zabbix-agent
 ```
 
+## Создать базу данных в PostgreSQL
 
-## Создайте базу данных в PostgreSQL
-
-Добавляем роль
+Добавить роль
 ```
 sudo -u postgres createuser --pwprompt zabbix
 ```
 
-Добавляем базу
+Добавить базу
 ```
 sudo -u postgres createdb -O zabbix zabbix
 ```
 
-Импортируем схему
+Импортировать схему
 ```
 sudo zcat /usr/share/doc/zabbix-server-pgsql*/create.sql.gz | sudo -u zabbix psql zabbix
 ```
 
-## Настройте базу данных для Zabbix
+## Настройть базу данных для Zabbix
+
 В файле
 ```
 sudo nano /etc/zabbix/zabbix_server.conf
 ```
+
 Изменить строку
 ```
 DBPassword=password
 ```
 
 ## Настройте PHP для веб-интерфейса
-В файле
+
+В файле /etc/zabbix/nginx.conf
 ```
-sudo nano /etc/zabbix/apache.conf
+sudo nano /etc/zabbix/nginx.conf
 ```
-Изменяем строку
+
+Снимаем комментарий
+```
+listen 8080;
+server_name _;
+```
+
+перезапустить nginx
+```
+nginx -s reload
+```
+
+Важно! сервер будет доступен по адресу localhost:8080
+
+В файле /etc/zabbix/php-fpm.conf
+
+```
+sudo nano /etc/zabbix/php-fpm.conf
+```
+
+изменемя врменную зонц
+
 ```
 php_value date.timezone Asia/Yekaterinburg
 ```
 
-## Запустите процессы Zabbix сервера и агента
+## Запускаем процессы Zabbix сервера и агента
+
 Запуск при загрузке ОС:
 ```
-sudo systemctl restart zabbix-server zabbix-agent apache2
-sudo systemctl enable zabbix-server zabbix-agent apache2
+sudo systemctl restart zabbix-server zabbix-agent nginx php7.2-fpm
+sudo systemctl enable zabbix-server zabbix-agent nginx php7.2-fpm
 ```
 
-## Настройте веб-интерфейс Zabbix
-
-Откройте установленный веб-интерфейс Zabbix: http://[IP_ADRES]/zabbix
-Выполните действия по этой инструкции: Установка веб-интерфейса Zabbix
-
+## Настроить postgresql
 
 ### Настроить pg_hba.conf
+
 Настройка доступа по сетям, в файле pg_hba.conf
 ```
 sudo nano /etc/postgresql/10/main/pg_hba.conf
 ```
+
 Пример: разрешить доступ локально из подсетей в режиме trust
 ```
 # Database administrative login by Unix domain socket
@@ -115,10 +138,12 @@ host    all             all             127.0.0.1/32            trust
 ```
 
 ### Настроить postgresql.conf
+
 Настройка доступа по адресам, в файле postgresql.conf
 ```
 sudo nano /etc/postgresql/10/main/postgresql.conf
 ```
+
 Пример: Доступ со всех адресов
 ```
 # - Connection Settings -
@@ -126,54 +151,11 @@ sudo nano /etc/postgresql/10/main/postgresql.conf
 listen_addresses = '*'
 ```
 
-### Создать базу данных из скрипта
-```
-sudo zcat /usr/share/doc/zabbix-server-pgsql/create.sql.gz | psql -U zabbix zabbix
-```
 
-### Запуск процесса Zabbix сервера
-Самое время запустить процесс Zabbix сервера и добавить его в автозагрузку:
-```
-sudo service zabbix-server start
-sudo update-rc.d zabbix-server enable
-```
+## Настройте веб-интерфейс Zabbix
 
-```
-sudo nano /etc/nginx/sites-available/default
-```
+Открываем веб-интерфейс Zabbix: http://[IP_ADRES]:8080
+Имя пользователя: Admin
+Пароль: zabbix
 
-### перезапустить nginx
-```
-nginx -s reload
-```
-
-### Настройка веб-интерфейса
-Файл конфигурации nginx
-```
-sudo nano /etc/zabbix/nginx.conf
-```
-текст
-```
-listen          80;
-```
-
-Файл конфигурации php
-```
-sudo nano /etc/zabbix/php-fpm.conf
-```
-текст
-```
-php_value max_execution_time 300
-php_value memory_limit 128M
-php_value post_max_size 16M
-php_value upload_max_filesize 2M
-php_value max_input_time 300
-php_value max_input_vars 10000
-php_value always_populate_raw_post_data -1
-php_value date.timezone Asia/Yekaterinburg
-```
-
-Перезапуск nginx
-```
-nginx -s reload
-```
+Важно! После входа необходимо поментья пароль пользователя
