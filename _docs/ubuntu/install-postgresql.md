@@ -69,13 +69,13 @@ sudo reboot
 ```
 
 ## Создать файл с репозиторием
-``
+```
 sudo nano /etc/apt/sources.list.d/pgdg.list
-``
+```
 и добавить в нем строку
-``
+```
 deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main
-``
+```
 
 ## Установка PostgreSQL
 
@@ -84,6 +84,10 @@ deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main
 ### Импортировать репозиторий
 ```
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+```
+
+### Обновить
+```
 sudo apt-get update
 ```
 
@@ -106,10 +110,12 @@ apt-get install postgresql-9.6
 ```
 pg_lsclusters
 ```
+
 - Запуск кластера
 ```
 - sudo service postgresql start
 ```
+
 - Остановка кластера
 ```
 sudo service postgresql stop
