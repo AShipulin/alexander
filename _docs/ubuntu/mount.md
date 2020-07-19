@@ -14,6 +14,8 @@ toc: true
 ## Получем список дисков
 Cписка дисков
 `sudo fdisk -l`
+или
+`cat /proc/partitions`
 Спсиок дисков с UUID
 `blkid`
 
@@ -25,13 +27,13 @@ sudo mkfs -t ext4 -L data /dev/vdb
 где `/dev/vdb` - диск найденый на предыдущем шаге
 
 ## Монтируем диск
-`sudo mount /dev/vdb /mnt/data`
+`sudo mount /dev/vdb /mnt/vdb`
 
 ## Добавляем диск в автозагрузку
 
-### Вариант 1. (Реекомендуемый)
+### Вариант 1. По имени (Реекомендуемый)
 ```
-echo "LABEL=data /mnt/data ext4 defaults 0 0" | sudo tee -a /etc/fstab
+echo "LABEL=data /mnt/vdb ext4 defaults 0 0" | sudo tee -a /etc/fstab
 ```
 Проверяем добавление
 `sudo nano /etc/fstab`
@@ -41,7 +43,7 @@ echo "LABEL=data /mnt/data ext4 defaults 0 0" | sudo tee -a /etc/fstab
 `blkid`
 Запоимнаем UUID нужного диска, заменяем в скрипте и выполняем
 ```
-echo <UUID> /mnt/data ext4 defaults 0 0" | sudo tee -a /etc/fstab
+echo <UUID> /mnt/vdb ext4 defaults 0 0" | sudo tee -a /etc/fstab
 ```
 Проверяем добавление
 `sudo nano /etc/fstab`
