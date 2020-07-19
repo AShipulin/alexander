@@ -159,3 +159,16 @@ listen_addresses = '*'
 Пароль: zabbix
 
 Важно! После входа необходимо поментья пароль пользователя
+
+
+## Обнвление
+
+```
+sudo service zabbix-server stop`
+sudo rm -Rf /etc/apt/sources.list.d/zabbix.list
+sudo wget https://repo.zabbix.com/zabbix/5.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_5.0-1+bionic_all.deb
+sudo dpkg -i zabbix-release_5.0-1+bionic_all.deb
+sudo apt update
+sudo apt-get install --only-upgrade zabbix-server-pgsql zabbix-frontend-php zabbix-nginx-conf php-pgsql zabbix-agent
+sudo service zabbix-server start
+```
