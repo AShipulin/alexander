@@ -9,7 +9,7 @@ toc: true
 Ниже пример монтрования нового диска data.
 
 ## Создем папку, где будет находиться диск
-`sudo mkdir /mnt/data`
+`sudo mkdir /mnt/vdb`
 
 ## Получем список дисков
 Cписка дисков
@@ -22,7 +22,7 @@ Cписка дисков
 ## Форматируем диск
 Диск будет отфрмаматирован с именем data
 ```
-sudo mkfs -t ext4 -L data /dev/vdb
+sudo mkfs -t ext4 -L vdb /dev/vdb
 ```
 где `/dev/vdb` - диск найденый на предыдущем шаге
 
@@ -33,7 +33,7 @@ sudo mkfs -t ext4 -L data /dev/vdb
 
 ### Вариант 1. По имени (Реекомендуемый)
 ```
-echo "LABEL=data /mnt/vdb ext4 defaults 0 0" | sudo tee -a /etc/fstab
+sudo echo "LABEL=vdb /mnt/vdb ext4 defaults 0 0" | sudo tee -a /etc/fstab
 ```
 Проверяем добавление
 `sudo nano /etc/fstab`

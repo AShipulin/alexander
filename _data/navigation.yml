@@ -29,6 +29,8 @@ docs:
 
   - title: Ubuntu
     children:
+      - title: "Фйаловый серевр с бакетом Object Storage"
+        url: /docs/ubuntu/fileserver
       - title: "upgrade"
         url: /docs/ubuntu/upgrade
       - title: "memory"
