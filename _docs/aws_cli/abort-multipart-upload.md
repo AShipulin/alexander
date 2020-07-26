@@ -1,6 +1,6 @@
 ---
 title: "Удаление загрузок"
-permalink: /docs/aws_cli/list-multipart-uploads/
+permalink: /docs/aws_cli/abort-multipart-upload/
 toc: true
 ---
 

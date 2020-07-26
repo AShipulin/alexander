@@ -1,7 +1,7 @@
 ---
-layout: default
+title: "Перенос базы на другой диск"
 title: /docs/postgresql/tablespace
-nav_order: 200
+toc: false
 ---
 
 # tablespace - Перенос базы данных на другой диск

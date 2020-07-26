@@ -4,7 +4,7 @@ permalink: /docs/aws_cli/list-multipart-uploads/
 toc: true
 ---
 
-## Получение спсиока загрузок
+## Получение спсиска загрузок
 
 Описание
 ```
