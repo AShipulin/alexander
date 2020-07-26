@@ -1,6 +1,6 @@
 ---
 title: "Перенос базы на другой диск"
-title: /docs/postgresql/tablespace
+permalink: /docs/postgresql/tablespace/
 toc: false
 ---
 
