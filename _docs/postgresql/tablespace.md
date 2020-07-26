@@ -1,6 +1,6 @@
 ---
 layout: default
-title: tablespace
+title: /docs/postgresql/tablespace
 nav_order: 200
 ---
 
