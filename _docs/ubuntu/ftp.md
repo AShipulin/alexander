@@ -1,6 +1,6 @@
 ---
 title: "FTP Сервер"
-permalink: /docs/ubuntu/ftp/
+permalink: /docs/ubuntu/ftp-server/
 toc: true
 ---
 

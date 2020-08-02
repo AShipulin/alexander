@@ -1,6 +1,6 @@
 ---
 title: "file-server"
-permalink: /docs/ubuntu/file-server/
+permalink: /docs/ubuntu/s3fs/
 toc: true
 ---
 

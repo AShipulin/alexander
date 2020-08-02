@@ -1,6 +1,6 @@
 ---
-title: "SFTP сервер"
-permalink: /docs/ubuntu/sftp/
+title: "Cервер SFTP"
+permalink: /docs/ubuntu/sftp-server/
 toc: true
 ---
 
