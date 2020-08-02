@@ -40,16 +40,25 @@ docs:
       url: /docs/postgresql/tablespace
   - title: Ubuntu
     children:
-      - title: "fileserver & оbject storage"
-        url: /docs/ubuntu/fileserver
+
       - title: "Обновление (upgrade)"
         url: /docs/ubuntu/upgrade
       - title: "Память (memory)"
         url: /docs/ubuntu/memory
       - title: "Файл подачик (swap)"
         url: /docs/ubuntu/swap
+
+      - title: "Файловый сервер (samba)"
+        url: /docs/ubuntu/file-server
+      - title: "FTP сервер"
+        url: /docs/ubuntu/ftp-server
+      - title: "SFTP сервер"
+        url: /docs/ubuntu/sftp-server
+      - title: "Монтироание диска (s3fs)"
+        url: /docs/ubuntu/s3fs
       - title: "Монтироание диска (mount)"
         url: /docs/ubuntu/mount
+
       - title: "install-nginx"
         url: /docs/ubuntu/install-nginx
       - title: "install-postgresql"

@@ -1,16 +1,10 @@
 ---
-title: "fileserver"
-permalink: /docs/ubuntu/fileserver/
+title: "file-server"
+permalink: /docs/ubuntu/file-server/
 toc: true
 ---
 
 # Фйаловый серевр с бакетом Object Storage
-
-## Цель
-
-Создать ВМ с монтированным бакетом Object Storage через fuse,
-который в совою очередь можно присоеденять как NFS сетевой диск,
-для выполнения backup.
 
 ## Ссылки
 
@@ -121,70 +115,7 @@ sudo service nfs-kernel-server restart
 sudo service smbd restart
 ```
 
-## Монтируем диск object storage
-
-[manpages.ubuntu.com](http://manpages.ubuntu.com/manpages/focal/man1/s3fs.1.html)
-
-### Установливаем s3fs
-s3fs — программа для Linux позволяющя монтировать объекты Object Storage
-```
-sudo apt install s3fs
-```
-
-### Создаем сервисный аккаунт
-https://console.cloud.yandex.ru/folders/b1gdf022fs6ma7rj92d8?section=service-accounts
-с ролями:
-- storage.viewer
-- storage.uploader
-
-### Сохраняем серетный ключь в файл
-Выполняем скрипт
-Вариант 1. `/root/.passwd-s3fsre`
-```
-echo <идентификатор ключа>:<секретный ключ> >  /root/.passwd-s3fs
-chmod 600  /root/.passwd-s3fsre
-```
-Вариант 2. `/etc/passwd-s3fs`
-```
-echo <идентификатор ключа>:<секретный ключ> >  /etc/passwd-s3fs
-chmod 600  /etc/passwd-s3fs
-```
-
-### Добавляем в автозагрузку
-Добавляем запись в /etc/fstab
-```
-sudo echo "s3fs#arctl-backup-files /mnt/obj fuse _netdev,allow_other,use_path_request_style,url=http://storage.yandexcloud.net 0 0" | sudo tee -a /etc/fstab
-```
-Важно! В этом случае пароль должен храниться в папке `/root/.passwd-s3fs`
-
-Вариант 2
-```
-sudo echo "arctl-backup-files /mnt/obj fuse.s3fs _netdev,allow_other,use_path_request_style,url=http://storage.yandexcloud.net 0 0" | sudo tee -a /etc/fstab
-```
-Важно! В этом случае пароль должен храниться в папке `/etc/passwd-s3fs`
-
-Проверяем добавление
-`sudo nano /etc/fstab`
-
-Вариант 2. С размещение кэша на дркугом диске -o use_cache
-```
-sudo echo "s3fs#arctl-backup-files /mnt/obj fuse _netdev,allow_other,use_cache=/mnt/vdb,use_path_request_style,url=http://storage.yandexcloud.net 0 0" | sudo tee -a /etc/fstab
-```
-
-### Монтируем диск
-
-```
-sudo s3fs arctl-backup-files /mnt/obj -o passwd_file=~/.passwd-s3fs \
-    -o url=http://storage.yandexcloud.net -o use_path_request_style
-```
-
-Вариант 2. С размещение кэша на дркугом диске -o use_cache
-```
-sudo s3fs arctl-backup-files /mnt/obj -o passwd_file=~/.passwd-s3fs \
-    -o use_cache=/mnt/vdb -o url=http://storage.yandexcloud.net -o use_path_request_style
-```
-
-## Подключение к диску
+## Подключение к диску из windows
 windows
 ```
 net use x: \\<публичный IP-адрес виртуальной машины>\data

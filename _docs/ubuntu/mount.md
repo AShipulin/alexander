@@ -4,6 +4,8 @@ permalink: /docs/ubuntu/mount/
 toc: true
 ---
 
+https://cloud.yandex.ru/docs/storage/tools/s3fs
+
 # Mount - Добавляем (монтируем) новый диск
 В Upuntu присоденяются новый диск а новая папка.
 Ниже пример монтрования нового диска data.
@@ -47,3 +49,9 @@ echo <UUID> /mnt/vdb ext4 defaults 0 0" | sudo tee -a /etc/fstab
 ```
 Проверяем добавление
 `sudo nano /etc/fstab`
+
+## Размонтировать диск
+Примеры
+```
+umount /srv/ftp/colibri-distrib
+```

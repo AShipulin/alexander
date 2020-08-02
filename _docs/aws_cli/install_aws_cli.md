@@ -4,7 +4,9 @@ permalink: /docs/aws_cli/install_aws_cli/
 toc: true
 ---
 
-Порядок установки
+# Установка AWS CLI
+
+орядок установки
 1. Загрузить нужную версию [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
 2. Установить AWS CLI
 3. В коммандной среде cmd или powershell выполнить
