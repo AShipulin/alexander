@@ -26,6 +26,7 @@ main:
 docs:
   - title: "Инструкции"
     url: /docs/guide/
+
   - title: aws_cli
     children:
     - title: "Установка"
@@ -34,10 +35,12 @@ docs:
       url: /docs/aws_cli/list-multipart-uploads
     - title: "Удаление загрузки"
       url: /docs/aws_cli/abort-multipart-upload
+
   - title: postgresql
     children:
     - title: "Перенос базы на другой диск"
       url: /docs/postgresql/tablespace
+
   - title: Ubuntu
     children:
 
