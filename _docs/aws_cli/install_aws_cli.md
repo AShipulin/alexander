@@ -28,3 +28,5 @@ aws --endpoint-url=https://storage.yandexcloud.net \
     s3 ls --recursive s3://<bucket-name>
 ```
 где <bucket-name> - имя бакета
+
+[Документация](https://docs.aws.amazon.com/cli/latest/reference/s3/)
