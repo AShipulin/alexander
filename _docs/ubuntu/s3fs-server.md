@@ -42,6 +42,16 @@ chmod 600  /root/.passwd-s3fsre
 sudo echo "arctl-backup-files /mnt/obj fuse.s3fs _netdev,allow_other,use_path_request_style,url=http://storage.yandexcloud.net 0 0" | sudo tee -a /etc/fstab
 ```
 
+Где
+  `_netdev` - Файловая система находится на устройстве, которое требует доступа к сети (проверка наличия сети)
+  `rw` - режим "чтение/запись"
+  `allow_other` - отменяет безопасности, ограничивающую доступ к монтированому файлу
+
+Примечание. Описание опций
+- https://ru.wikipedia.org/wiki/Fstab
+- https://manpages.ubuntu.com/manpages/focal/man1/s3fs.1.html
+- https://www.opennet.ru/man.shtml?topic=mount&category=8
+
 Проверяем добавление
 `sudo nano /etc/fstab`
 
