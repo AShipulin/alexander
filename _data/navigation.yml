@@ -47,7 +47,7 @@ docs:
     - title: "Создание проекта"
       url: /docs/yandex/tracker_projects
     - title: "Создание категории"
-      url: /docs/yandex/tracker_tracker
+      url: /docs/yandex/tracker_categories
 
   - title: Ubuntu
     children:
