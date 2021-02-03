@@ -41,6 +41,12 @@ docs:
     - title: "Перенос базы на другой диск"
       url: /docs/postgresql/tablespace
 
+  - title: Яндекс Трекер
+    url: /docs/yandex/tracker
+    children:
+    - title: "Создание проектов"
+      url: /docs/yandex/tracker_projects
+
   - title: Ubuntu
     children:
 
