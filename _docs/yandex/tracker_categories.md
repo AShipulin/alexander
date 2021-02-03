@@ -36,10 +36,32 @@ Content-Type: application/json
 <description> - описание категории
 <order> - порядок отображения
 
-Получить категории
+## Получить категории
 ```
 GET /v2/fields/categories HTTP/1.1
 Host: api.tracker.yandex.net
 Authorization: OAuth <token>
-X-Org-Id: 920716
+X-Org-Id: <orgid>
 ```
+
+## Изменить категорию
+```
+PATCH /v2/fields/categories/<categorid> HTTP/1.1
+Host: api.tracker.yandex.net
+Authorization: OAuth <token>
+X-Org-Id: <orgid>
+If-Match: "<version>"
+Content-Type: application/json
+
+{
+"name": {
+"en": "Cargo 2",
+"ru": "Груз 2"
+},
+"description": "",
+"order": 300
+}
+```
+где
+<version> - текущая версия категории
+<categorid> - id категории
