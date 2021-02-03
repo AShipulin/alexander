@@ -35,3 +35,11 @@ Content-Type: application/json
 <ru> - название категории на русском
 <description> - описание категории
 <order> - порядок отображения
+
+Получить категории
+```
+GET /v2/fields/categories HTTP/1.1
+Host: api.tracker.yandex.net
+Authorization: OAuth <token>
+X-Org-Id: 920716
+```
