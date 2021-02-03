@@ -44,8 +44,10 @@ docs:
   - title: Яндекс Трекер
     url: /docs/yandex/tracker
     children:
-    - title: "Создание проектов"
+    - title: "Создание проекта"
       url: /docs/yandex/tracker_projects
+    - title: "Создание категории"
+      url: /docs/yandex/tracker_tracker
 
   - title: Ubuntu
     children:
