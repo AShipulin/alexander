@@ -1,6 +1,6 @@
 ---
 title: "Создание проектов"
-permalink: /docs/guide/
+permalink: /docs/yandex/tracker_projects/
 redirect_from:
   - /theme-setup/
 toc: true

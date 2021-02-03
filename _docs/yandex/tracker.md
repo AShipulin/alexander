@@ -1,6 +1,6 @@
 ---
 title: "Яндекс Трекер"
-permalink: /docs/guide/
+permalink: /docs/yandex/tracker/
 toc: true
 ---
 
