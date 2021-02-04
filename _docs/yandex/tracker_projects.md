@@ -4,6 +4,9 @@ permalink: /docs/yandex/tracker_projects/
 toc: true
 ---
 
+Раздел содержит не документированные возможности
+[REST API Яндекс.Трекера](https://yandex.ru/dev/connect/tracker/api/about.html) (на момент написания).
+
 Создание проекта используя HTTP-запрос с методом POST.
 Параметры тела в формате JSON.
 ```

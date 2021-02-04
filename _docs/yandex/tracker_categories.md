@@ -4,6 +4,9 @@ permalink: /docs/yandex/tracker_categories/
 toc: true
 ---
 
+Раздел содержит не документированные возможности
+[REST API Яндекс.Трекера](https://yandex.ru/dev/connect/tracker/api/about.html) (на момент написания).
+
 Категории позволяю группировать поля в задаче.
 Возможности создать категории из интерфейса нет
 а так-же нет в описании API.
@@ -20,48 +23,35 @@ X-Org-ID: <orgid>
 Content-Type: application/json
 
 {
-"name": {
-"en": "<en>",
-"ru": "<ru>"
-},
-"description": "<description>",
-"order": <order>
+    "name": {
+        "en": "<en>",
+        "ru": "<ru>"
+    }
 }
 ```
 где
 <token> - ваш токен
 <orgid> - номер организации
-<en> - название категории на английском
-<ru> - название категории на русском
-<description> - описание категории
-<order> - порядок отображения
+<en> - название поля на английском
+<ru> - название поля на русском
 
-## Получить категории
+
+## Получить список полей
 ```
-GET /v2/fields/categories HTTP/1.1
+GET /v2/fields/ HTTP/1.1
 Host: api.tracker.yandex.net
 Authorization: OAuth <token>
 X-Org-Id: <orgid>
 ```
 
-## Изменить категорию
+## Получить поле
 ```
-PATCH /v2/fields/categories/<categorid> HTTP/1.1
+GET /v2/fields/<fieldsid> HTTP/1.1
 Host: api.tracker.yandex.net
 Authorization: OAuth <token>
 X-Org-Id: <orgid>
 If-Match: "<version>"
 Content-Type: application/json
-
-{
-"name": {
-"en": "Cargo 2",
-"ru": "Груз 2"
-},
-"description": "",
-"order": 300
-}
 ```
 где
-<version> - текущая версия категории
-<categorid> - id категории
+<fieldsid> - id поля
