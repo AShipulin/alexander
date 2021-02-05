@@ -4,7 +4,7 @@ permalink: /docs/yandex/tracker_categories/
 toc: true
 ---
 
-Раздел содержит не документированные возможности
+Раздел содержит недокументированные возможности
 [REST API Яндекс.Трекера](https://yandex.ru/dev/connect/tracker/api/about.html) (на момент написания).
 
 Категории позволяю группировать поля в задаче.
