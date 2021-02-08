@@ -219,6 +219,7 @@ defaults:
       sidebar:
         nav: "docs"
 
+
 # Sass/SCSS
 sass:
   sass_dir: _sass
