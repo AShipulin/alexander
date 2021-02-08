@@ -23,68 +23,11 @@ main:
 
 
 # Инструкции
-docs:
-  - title: "Инструкции"
-    url: /docs/guide/
-
-  - title: aws_cli
-    children:
-    - title: "Установка"
-      url: /docs/aws_cli/install_aws_cli
-    - title: "Список загрузок"
-      url: /docs/aws_cli/list-multipart-uploads
-    - title: "Удаление загрузки"
-      url: /docs/aws_cli/abort-multipart-upload
-
-  - title: postgresql
-    children:
-    - title: "Перенос базы на другой диск"
-      url: /docs/postgresql/tablespace
-
-  - title: Яндекс Трекер
-    url: /docs/yandex/tracker
-    children:
-    - title: "Создание проекта"
-      url: /docs/yandex/tracker_projects
-    - title: "Создание категории"
-      url: /docs/yandex/tracker_categories
-    - title: "Создание категории"
-      url: /docs/yandex/tracker_fields
-
-  - title: Ubuntu
-    children:
-
-      - title: "Обновление (upgrade)"
-        url: /docs/ubuntu/upgrade
-      - title: "Память (memory)"
-        url: /docs/ubuntu/memory
-      - title: "Файл подачик (swap)"
-        url: /docs/ubuntu/swap
-
-      - title: "Файловый сервер (samba)"
-        url: /docs/ubuntu/file-server
-      - title: "FTP сервер"
-        url: /docs/ubuntu/ftp-server
-      - title: "SFTP сервер"
-        url: /docs/ubuntu/sftp-server
-      - title: "Монтироание диска (s3fs)"
-        url: /docs/ubuntu/s3fs
-      - title: "Монтироание диска (mount)"
-        url: /docs/ubuntu/mount
-
-      - title: "install-nginx"
-        url: /docs/ubuntu/install-nginx
-      - title: "install-postgresql"
-        url: /docs/ubuntu/install-postgresql
-      - title: "install-redmine"
-        url: /docs/ubuntu/install-redmine
-      - title: "install-youtrack"
-        url: /docs/ubuntu/install-youtrack
-      - title: "install-zabbix"
-        url: /docs/ubuntu/install-zabbix
-      - title: "- agent-linux"
-        url: /docs/ubuntu/install-zabbix-agent-linux
-      - title: "- agent-windows"
-        url: /docs/ubuntu/install-zabbix-agent-windows
-      - title: "- pg-monitoring"
-        url: /docs/ubuntu/install-zabbix-pg-monitoring
+defaults:
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      sidebar:
+        nav: "docs"
