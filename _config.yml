@@ -50,7 +50,7 @@ algolia:
   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : # true (default), false
 google:
-  search_engine_id       : "003839802267575350869:waqqaezqhrx" # YOUR_SEARCH_ENGINE_ID
+  search_engine_id       : #"003839802267575350869:waqqaezqhrx" # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
 google_site_verification :
@@ -62,66 +62,60 @@ files_to_exclude         : #- _posts/2017-11-28-post-exclude-search.md
 
 
 # Social Sharing
-twitter:
-  username               : &twitter "avshipulin"
-facebook:
-  username               : &facebook "shipulin.alexander"
-  app_id                 :
-  publisher              :
-og_image                 : "/assets/images/site-logo.png" # Open Graph/Twitter default site image
+#twitter:
+#  username               : &twitter "avshipulin"
+#facebook:
+#  username               : &facebook "shipulin.alexander"
+#  app_id                 :
+#  publisher              :
+#og_image                 : "/assets/images/site-logo.png" # Open Graph/Twitter default site image
 # For specifying social profiles, used in _includes/seo.html
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - "https://twitter.com/avshipulin"
+    - "https://vk.com/ecaramelica"
     - "https://www.facebook.com/shipulin.alexander"
 
 # Analytics
 analytics:
-  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : #"google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : "UA-162761825-1" #"UA-2011187-3" # Replace this with your ID, or delete
+    tracking_id          : #"UA-162761825-1" #"UA-2011187-3" # Replace this with your ID, or delete
     anonymize_ip         : #true
 
 
 # Site Author
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/Alexander-Shipulin.jpg"
-  bio              : "Руководитель, разработчик, аналитик"
+  avatar           : #"/assets/images/Alexander-Shipulin.jpg"
+  bio              : #"Руководитель, разработчик, аналитик"
   location         : "Россия, Екатеринбург"
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/avshipulin"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/AShipulin"
+    - label: "vk"
+      icon: "fab fa-fw fa-vk"
+      url: "https://vk.com/ecaramelica"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/alexander.shipulin/"
+      url: "https://www.instagram.com/ecaramelica/"
     - label: "facebook"
       icon: "fab fa-fw fa-facebook"
-      url: "https://web.facebook.com/shipulin.alexander"
+      url: "https://www.facebook.com/Caramelica"
 
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/avshipulin"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/AShipulin"
+    - label: "vk"
+      icon: "fab fa-fw fa-vk"
+      url: "https://vk.com/ecaramelica"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/alexander.shipulin/"
+      url: "https://www.instagram.com/ecaramelica/"
     - label: "facebook"
       icon: "fab fa-fw fa-facebook"
-      url: "https://web.facebook.com/shipulin.alexander"
+      url: "https://www.facebook.com/Caramelica"
 
 
 # Reading Files
