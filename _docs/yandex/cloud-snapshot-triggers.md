@@ -51,7 +51,9 @@ yc compute disk update --id epdfer4o59219laqv3rc --labels snapshot-critical=1
 ### Создание моментальных снимков для критичных данных с жизненным циклом 7 дней
 
 Будет запускается каждый день
+
 **create-snapshot-critical**
+
 ```
 // Префикс имени диска ГГГГ-ММ-ДД
 let today = new Date();
@@ -104,7 +106,9 @@ exports.handler = handler;
 ### Создание моментальных снимков по умолчанию с жизненным циклом 14 дней
 
 Будет запускаться один раз в неделю
+
 **create-snapshot-default**
+
 ```
 // Префикс имени диска ГГГГ-ММ-ДД
 let today = new Date();
@@ -157,7 +161,9 @@ exports.handler = handler;
 ### Удаление моментальных снимков с истекшим жизненным циклом
 
 Будет выполнятся каждый день
+
 **delete-snapshot-lifecycle**
+
 ```
 // yc compute snapshot list - список дисков
 // yc compute snapshot get <id> - метка диска
@@ -208,17 +214,20 @@ module.exports.handler = async function (event, context) {
 ### Создание моментальных снимков каждый день в 18:00
 
 **cron-snapshot-create-critical**
+
 Cron-выражение: 00 18 ? * * *
 Функция: create-snapshot-critical
 
 ### Создание моментальных снимков каждое воскресение в 08:00
 
 **cron-snapshot-create-default**
+
 Cron-выражение: 00 08 ? * 7L *
 Функция: create-snapshot-default
 
 ### Удаление моментальных снимков каждый день в 23:59
 
 **cron-snapshot-delete-lifecycle**
+
 Cron-выражение: 59 23 ? * * *
 Функция: delete-snapshot-lifecycle
