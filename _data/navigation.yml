@@ -21,7 +21,7 @@ main:
     url: /about/
   - title: "Условия"
     url: /terms/
-    
+
 # Инструкции
 docs:
   - title: "Инструкции"
@@ -41,15 +41,21 @@ docs:
     - title: "Перенос базы на другой диск"
       url: /docs/postgresql/tablespace
 
-  - title: Яндекс Трекер
+  - title: Яндекс.Трекер
     url: /docs/yandex/tracker
     children:
     - title: "Создание проекта"
       url: /docs/yandex/tracker_projects
-    - title: "Создание категории"
+    - title: "Создание / изменение категории"
       url: /docs/yandex/tracker_categories
-    - title: "Создание категории"
+    - title: "Создание / изменение поля"
       url: /docs/yandex/tracker_fields
+
+  - title: Yandex.Cloud
+    url: /docs/yandex/tracker
+    children:
+    - title: "Создание / удалением snapshot c использованием serverless"
+      url: /docs/yandex/cloud-snapshot-triggers
 
   - title: Ubuntu
     children:

@@ -1,4 +1,8 @@
-# Создание и удалением моментальных снимков в Yandex Cloud c использованием functions (serverless)
+---
+title: "Создание / удалением snapshot c использованием serverless"
+permalink: /docs/yandex/cloud-snapshot-triggers/
+toc: true
+---
 
 ## Цель
 
