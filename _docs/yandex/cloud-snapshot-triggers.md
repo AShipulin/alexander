@@ -14,6 +14,8 @@ toc: true
 Все снимки один раз в неделю в воскресение в 08:00, срок жизни 14 день.
 Удаление снимков выполняется ежедневно в 23:59.
 
+Графическая схема [ссылка](https://viewer.diagrams.net/?highlight=0000ff&edit=https%3A%2F%2Fapp.diagrams.net%2F%23G1MS-fS_s-agVfnpWCHP8Fk6SK-ALd0doj&layers=1&nav=1&title=%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BC%D0%BE%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%BD%D0%B8%D0%BC%D0%BA%D0%BE%D0%B2.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1MS-fS_s-agVfnpWCHP8Fk6SK-ALd0doj%26export%3Ddownload)
+
 За основу взята публикация https://cloud.yandex.ru/blog/posts/2020/01/snapshot-triggers.
 После прочтения выявились нюансы:
 - наименование моментального диска формируется из id, что не позволяет различить их
@@ -215,19 +217,19 @@ module.exports.handler = async function (event, context) {
 
 **cron-snapshot-create-critical**
 
-Cron-выражение: 00 18 ? * * *
+Cron-выражение: 00 18 ? * 2-6 *
 Функция: create-snapshot-critical
 
-### Создание моментальных снимков каждое воскресение в 08:00
+### Создание моментальных снимков каждое воскресение в 18:00
 
 **cron-snapshot-create-default**
 
-Cron-выражение: 00 08 ? * 1 *
+Cron-выражение: 00 18 ? * 1 *
 Функция: create-snapshot-default
 
-### Удаление моментальных снимков каждый день в 23:59
+### Удаление моментальных снимков каждый день в 12:00
 
 **cron-snapshot-delete-lifecycle**
 
-Cron-выражение: 59 23 ? * * *
+Cron-выражение: 00 12 ? * * *
 Функция: delete-snapshot-lifecycle
