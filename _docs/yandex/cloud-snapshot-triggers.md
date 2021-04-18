@@ -38,12 +38,8 @@ yc compute disk list > c:\tmp\disk_list
 - snapshot-critical
 
 ```
-yc compute disk update --id <id диска> --labels snapshot-default=7
-yc compute disk update --id <id диска> --labels snapshot-critical=21
-```
-
-```
-yc compute disk update --id epdfer4o59219laqv3rc --labels snapshot-critical=1
+yc compute disk update --id <id диска> --labels snapshot-default=14
+yc compute disk update --id <id диска> --labels snapshot-critical=7
 ```
 
 ## Создадим функции
