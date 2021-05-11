@@ -4,26 +4,36 @@ permalink: /docs/ubuntu/upgrade/
 toc: true
 ---
 
-# Обновление (upgrade) Ubuntu до новой версии
+# Обновление пакетов и обновление Ubuntu до новой версии
 
-[Релиз Ubuntu](https://wiki.ubuntu.com/BionicBeaver/ReleaseNotes?)
-[Загрузка Ubuntu](https://ubuntu.com/download/server)
+## Ссылки
 
-## Команда на сервере
+- [Релиз Ubuntu](https://wiki.ubuntu.com/BionicBeaver/ReleaseNotes?)
+- [Загрузка Ubuntu](https://ubuntu.com/download/server)
+- [ru.wikipedia.org/wiki/Ubuntu](https://ru.wikipedia.org/wiki/Ubuntu)
+
+## Обновление пакетов
+
 ```
-sudo apt update && sudo apt dist-upgrade
+sudo apt update && sudo apt dist-upgrade -y && sudo apt autoremove
 ```
-или
+apt update - обновление установленных пакетов
+apt dist-upgrade - обновление и удаление не старых пакетов
+autoremove - автоматическое удаление пакетов не используемых пакетов
+
+## Обновление ядра
+
+[Upgrades](https://help.ubuntu.com/community/Upgrades)
+
 ```
 sudo apt install update-manager-core
+sudo do-release-upgrade
 ```
 
 ## Версия ubuntu
+
+[Checking your Ubuntu Version](https://help.ubuntu.com/community/CheckingYourUbuntuVersion)
+
 ```
 lsb_release -a
 ```
-
-## Ссылки
-- [Официальная документация - Upgrades](https://help.ubuntu.com/community/Upgrades)
-- [Официальная документация - release](https://help.ubuntu.com/community/CheckingYourUbuntuVersion)
-- [wiki на help.ubuntu.ru](https://help.ubuntu.ru/wiki/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE_%D0%BF%D0%BE_ubuntu_server/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0/%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5)
