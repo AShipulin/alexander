@@ -28,6 +28,9 @@ toc: true
 
 ## Пометим диски для создания снимков
 
+Возможно потребуется инициализация cli,
+[начало работы с CLI](https://cloud.yandex.ru/docs/cli/quickstart)
+
 Получим список дисков
 ```
 yc compute disk list > c:\tmp\disk_list
