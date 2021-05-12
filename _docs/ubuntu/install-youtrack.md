@@ -4,51 +4,79 @@ permalink: /docs/ubuntu/install-youtrack/
 toc: true
 ---
 
-# Установка (Install) Youtrack
+# Установка и обновление YouTrack (Install / Upgrade﻿)
 
 ## Подготовка
+
+Обновление репозиториев, установка коммандера, редактора и временной зоны
 ```
 sudo apt-get update    
 sudo apt-get install mc
 sudo apt-get install nano
-sudo mc
 sudo timedatectl set-timezone Asia/Yekaterinburg
 ```
 
 ## Установка java
-```
-sudo apt-get install java
-```
-Проверка версии
+
+Проверка версии java
 ```
 java -version
 ```
 
-## Установка Java Runtime Environment
+Если нет, то установка пакета java
+```
+sudo apt-get install java
+```
+
+## Установка JRE
+
+Установка JRE (Java Runtime Environment)
 ```
 apt install default-jre
 ```
 
 ## Установка пакета rng-tools
+
+Установим rng-tools - компонент необходимы для YouTrack
 ```
 sudo apt-get install rng-tools
 ```
 
-## Установка Youtrack
-[Инструкция на английском на сайте jetbrains.com] https://www.jetbrains.com/help/youtrack/standalone/Install-YouTrack-JAR-as-Service-Linux.html
+## Установка YouTrack
 
-### Добавить пользователя
+[Инструкция на jetbrains.com](https://www.jetbrains.com/help/youtrack/standalone/Install-YouTrack-JAR-as-Service-Linux.html)
+
+### 1. Добавить пользователя
+
+Создание пользователя для запуска службы YouTrack
 ```
 adduser youtrack --disabled-password
-wget -O /home/youtrack/youtrack.jar https://download.jetbrains.com/charisma/youtrack-2019.1.52973.jar
+```
+
+### 2. Загрузка релиза
+
+Для загрузки используем wget
+```
+wget -O /home/youtrack/youtrack.jar https://download.jetbrains.com/charisma/youtrack-<version>.jar
+```
+Где
+- version - номер версии. Например: 2021.1.14501
+
+Последнюю версию можно узнать по [ссылке](https://www.jetbrains.com/youtrack/download/get_youtrack.html#section=standalone), где перейти в **Release Notes**.
+
+### 3. Выдаем права на архив
+```
 chown youtrack:youtrack /home/youtrack/youtrack.jar
 ```
 
-### Создать файл
+### 4. Создаем в systemd службу
+
+Путь где надо создать службу
 ```
 /etc/systemd/system/youtrack.service
 ```
-и добавить содержимое
+
+Содержимое в файле службы
 ```
 [Unit]
 Description=Youtrack
@@ -63,37 +91,67 @@ User=youtrack
 
 [Install]
 WantedBy=default.target
-
-# Настроить службу
-systemctl daemon-reload
-systemctl enable youtrack.service
-service youtrack start
 ```
 
-### Перезагрузить машину
+### 5. Настройка службы
+
+Инструкция содержит перезагрузку демона, включение службы
+```
+sudo systemctl daemon-reload
+sudo systemctl enable youtrack.service
+```
+
+### 6. Запуск службы
+
+```
+sudo service youtrack start
+```
+
+Возможно потребуется перезагрузка
+```
 sudo reboot
+```
+
+### 7. Открытие YouTrack
+
+```
+http://<your-host-name>:8080
+```
+где
+- your-host-name - хост на котором установлен YouTrack
 
 ## Восстановление из backup
-[Инструкция на английском на сайте jetbrains.com](https://www.jetbrains.com/help/youtrack/standalone/Restore-JAR-Installation.html)
 
-### Установить YouTrack заново как указано выше (обязательно перезагрузить)
-```
-sudo reboot
-```
+[Инструкция на jetbrains.com](https://www.jetbrains.com/help/youtrack/standalone/Restore-JAR-Installation.html)
+
+Кратка инструкция для случая когда восстанавливаем в новом месте:
+- установить YouTrack
+- скачать backup
+- запустить YouTrack
+- выбрать режим восстановление из backup
 
 ### Скачать backup youtrack.tar.gz
 в папку /home/youtrack/
 ```
-wget -O /home/youtrack/youtrack.tar.gz https://www.dropbox.com/s/7m7wkhi81ez2byv/2019-07-02-22-50-33.tar.gz?dl=0
+wget -O /home/youtrack/youtrack.tar.gz <url>
 ```
+где
+- url - адрес загрузки
 
-### Запустить настройку и выбрать режим update
-```
-127.0.0.1:8080
-```
------------------
-# Запуск youtrack вручную
-# java -jar youtrack.jar
 
-# Запустить и начать настройку
-http://127.0.0.1:8080
+## Обновление (Upgrade﻿)
+
+[Инструкция на jetbrains.com](https://www.jetbrains.com/help/youtrack/standalone/Install-YouTrack-JAR-as-Service-Linux.html#upgrade-jar-as-service-linux)
+
+Краткая инструкция по обновлению:
+- Удалить предыдущую версию
+- Загрузить последнюю версию
+- Установить разрешения на файл
+- Перезапустить
+
+```
+mv /home/youtrack/youtrack.jar /home/youtrack/youtrack-old.jar
+wget -O /home/youtrack/youtrack.jar https://download.jetbrains.com/charisma/youtrack-<version>.jar
+chown youtrack:youtrack /home/youtrack/youtrack.jar
+service youtrack restart
+```
