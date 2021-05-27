@@ -3,89 +3,132 @@ title: "Публикация: Развёртывание сайта докуме
 date: 2020-04-03
 toc: true
 categories:
-  - Post
+  - Публикация
 tags:
   - sites
   - mmistakes
   - Jekyll
 ---
 
-Цель. Создать сайт содержащий раздел новости и руководство пользователя,
+Цель. Создать сайт содержащий разделом документы, публикации,
 где редактирование страниц выполняется с использованием разметки markdown.
 
 Для этого потребуется:
 - регистрация на GitHub
-- GitHub Desktop
-- Atom
+- GitHub Desktop https://desktop.github.com/
+- Atom https://atom.io/
 
-## Клонировать репоизторий
-https://github.com/mmistakes/minimal-mistakes
+Публикация написана по инструкции от разработчика
+https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#remote-theme-method
 
-## Настроить `_config.yml`
+## Создаем сайт из репозитория
 
-- Заполнить название
-- Контактные данные
-- Разместить логотип
-- # Social Sharing
-- timezone: Asia/Yekaterinburg
+Копируем стартовый репозиторий (без лишних модулей), для этого нужно перейти по ссылке
+https://github.com/mmistakes/mm-github-pages-starter/generate
+указать название нового репозитория и сохранить
+
+## Настраиваем публикацию в pages
+
+Переходим в настройки репозитория в раздел pages
+Затем выбреем source и ветку master, после сохранения сайт будет доступен
+по ссылке указанной на той же странице.
+
+Важно! При желании можно настроить переход на сайт по доменному имени.
+
+## Настраиваем сайт
+
+Далее следуем инструкции
+https://mmistakes.github.io/minimal-mistakes/docs/configuration/
+
+### Устанавливаем locale
+
+https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-locale
+
+locale - это языковой стандарт
+Правильное наименование locale можно узнать по ссылке https://docs.microsoft.com/en-us/previous-versions/commerce-server/ee825488(v=cs.20)?redirectedfrom=MSDN
+
+1. Открываем `_config.yml`
+2. Дописываем `locale: "ru-RU"`
+3. В директорию `_data/ui-text.yml` сохраняем файл https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+
+### Задаем название сайта title
+
+https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-title
+
+Используется в теме, шапка сайта и теге `<title>`
 
 ```
-# Тема
-remote_theme             : "mmistakes/minimal-mistakes@4.19.1"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-
-# Site Settings
-locale                   : "ru-RU"
-title                    : "Название"
-title_separator          : "-"
-subtitle                 : ""
-name                     : &name "" # &name is a YAML anchor which can be *referenced later
+title: "My Awesome Site"
 ```
 
-### Установить русский язык
+### Определяем временная зону timezone
 
-- в `_config.yml` установить `locale: "ru-RU"`
-- скопировать `_data\ui-text.yml`
+Список всех зон https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-### Удалить лишние разделы
+```
+timezone: Asia/Yekaterinburg
+````
 
-portfolio, pets, recipes в
+### Подключаем коллекцию docs
 
-- `_config.yml` в разделе `collections:`, `Defaults:`
-- `_data\navigation.yml` в `main`
-- `_pages\portfolio-archive.md`
-- `docs\_pages\recipes-archive.md`
-- `docs\_pages\pets.md`
+docs - это раздел сайта с документацией
 
+1. Открываем `_config.yml`
+2. Дописываем Collections
+```
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
+```
+3. Дописываем defaults
+```
+# Defaults
+defaults:
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "docs"
+```
 
-### Удалить comments
-
-- `_data\comments`
-
-### Удалить posts
+### Настраиваем публикации
 
 - при удалении `2010-09-09-post-gallery` удалить ссылку в `_docs\14-helpers.md`
 - Кроме `_posts\9999-12-31-post-future-date.md`
 
 
-### Настроить поиск
+### Настраиваем поиск google
 
-- https://cse.google.com/cse/all
-- получить код для сайта `https://cse.google.com/cse.js?` код
-- search_engine_id : код
+https://cse.google.com/cse/all
 
-### Настроить аналитику
+получить код для сайта по ссылке `https://cse.google.com/cse.js?`
+записать в `_config.yml` строку `search_engine_id : код`
 
-- https://analytics.google.com/analytics/web/#/
+Важно! Работает как то криво, обычно достаточно lunr
 
-### Можно удалить не нужные страцицы и _docs
-- /home
-- /lorem-ipsum
-- /tags/markup/
-- /page-a
-- /page-b
-- /post-archive-feature-rows (если нужны галереи фото то оставить как образец)
-- /splash-page
+### Настраиваем поиск lunr
 
-## Пример кода страницы /еxample-content/
+Для включения в `_config.yml` запишем:
+
+```
+search                   : true
+search_full_content      : true
+search_provider          : lunr
+```
+
+### Настраиваем аналитику
+
+https://analytics.google.com/analytics/web/#/
+
+
+### Пример кода страницы /еxample-content/
 - /еxample-content/
