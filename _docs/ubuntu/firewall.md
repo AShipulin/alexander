@@ -16,6 +16,7 @@ sudo ufw allow 22
 ```
 
 ### Открываем порт 5432 для PostgreSQL
+
 ```
 sudo ufw allow 5432
 ```
