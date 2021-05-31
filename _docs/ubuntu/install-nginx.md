@@ -32,22 +32,22 @@ sudo timedatectl set-timezone Asia/Yekaterinburg
 
 Например пример mysite.arctl.ru.conf	   	
 ```
-		server {
-				server_name mysite.mydomen.ru www.mysite.mydomen.ru;
-				location / {
-						proxy_pass http://130.193.41.115:80;
-						proxy_read_timeout 1200;
-						proxy_send_timeout 1200;
-						proxy_buffer_size 128k;
-						proxy_buffers 4 256k;
-						proxy_busy_buffers_size 256k;
-						proxy_set_header Host $host;
-						proxy_set_header X-Real-IP $remote_addr;
-						proxy_set_header X-Forvarder-for $remote_addr;
-						proxy_set_header X-Colibri-Version "1.1.1";
-						proxy_hide_header X-AspNet-Version;
-						client_max_body_size 0m;
-				}
+server {
+		server_name mysite.mydomen.ru www.mysite.mydomen.ru;
+		location / {
+				proxy_pass http://130.193.41.115:80;
+				proxy_read_timeout 1200;
+				proxy_send_timeout 1200;
+				proxy_buffer_size 128k;
+				proxy_buffers 4 256k;
+				proxy_busy_buffers_size 256k;
+				proxy_set_header Host $host;
+				proxy_set_header X-Real-IP $remote_addr;
+				proxy_set_header X-Forvarder-for $remote_addr;
+				proxy_set_header X-Colibri-Version "1.1.1";
+				proxy_hide_header X-AspNet-Version;
+				client_max_body_size 0m;
+		}
 ```
 
 ## Перезагрузка конфигурационного файла  
