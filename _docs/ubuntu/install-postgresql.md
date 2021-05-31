@@ -174,3 +174,32 @@ ALTER USER postgres with encrypted password '<PASSWORD>';
 ```
 sudo /etc/init.d/postgresql restart
 ```
+
+# Проверка версии Postgres
+
+Версия psql
+```
+sudo psql --version
+```
+
+Установленные пакеты
+```
+dpkg -l | grep postgres
+```
+
+# Удаление Postgres
+
+## 1. Список установленных пакетов
+```
+dpkg -l | grep postgres
+```
+
+## 2. Удаление пакетов
+```
+sudo apt-get --purge remove <НазваниеПакета>
+```
+
+## 3. Проверка удалённых пакетов
+```
+dpkg -l | grep postgres
+```
