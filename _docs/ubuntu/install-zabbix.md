@@ -10,11 +10,12 @@ toc: true
 - nginx
 - PostgreSQL
 
-[Документация на zabbix.com](https://www.zabbix.com/ru/download?zabbix=4.4&os_distribution=ubuntu&os_version=18.04_bionic&db=postgresql)
+Скачать и установить Zabbix [ссылка на zabbix.com](https://www.zabbix.com/ru/download?zabbix=5.4&os_distribution=ubuntu&os_version=20.04_focal&db=postgresql&ws=nginx)
 
 ## Подготовка
+
 ```
-sudo apt-get update    
+sudo apt update && sudo apt dist-upgrade -y && sudo apt autoremove
 sudo apt-get install mc
 sudo apt-get install nano
 sudo mc
@@ -26,11 +27,11 @@ sudo apt install traceroute
 
 ## Установка репозитория Zabbix:
 
-[Выбрать плтформу на zabbix.com](https://www.zabbix.com/ru/download)
+[Выбрать платформу на zabbix.com](https://www.zabbix.com/ru/download)
 
 ```
-sudo wget https://repo.zabbix.com/zabbix/5.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_5.0-1+bionic_all.deb
-sudo dpkg -i zabbix-release_5.0-1+bionic_all.deb
+sudo wget https://repo.zabbix.com/zabbix/<взять с сайта>
+sudo dpkg -i zabbix-release_<взять с сайта>
 sudo apt update
 ```
 
@@ -41,7 +42,7 @@ sudo apt update
 sudo apt install php
 ```
 
-установка компонентов
+установка компонентов с nginx
 ```
 sudo apt -y install zabbix-server-pgsql zabbix-frontend-php zabbix-nginx-conf php-pgsql zabbix-agent
 ```
@@ -151,7 +152,6 @@ sudo nano /etc/postgresql/10/main/postgresql.conf
 listen_addresses = '*'
 ```
 
-
 ## Настройте веб-интерфейс Zabbix
 
 Открываем веб-интерфейс Zabbix: http://[IP_ADRES]:8080
@@ -160,11 +160,22 @@ listen_addresses = '*'
 
 Важно! После входа необходимо поментья пароль пользователя
 
-
-## Обнвление
+## Запуск и проверка статуса
 
 ```
-sudo service zabbix-server stop`
+service zabbix-server start
+```
+
+```
+service zabbix-server status
+```
+
+## Обновление
+
+https://www.zabbix.com/documentation/5.0/ru/manual/installation/upgrade/packages/debian_ubuntu
+
+```
+sudo service zabbix-server stop
 sudo rm -Rf /etc/apt/sources.list.d/zabbix.list
 sudo wget https://repo.zabbix.com/zabbix/5.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_5.0-1+bionic_all.deb
 sudo dpkg -i zabbix-release_5.0-1+bionic_all.deb

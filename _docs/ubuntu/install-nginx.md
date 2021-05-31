@@ -22,7 +22,7 @@ sudo timedatectl set-timezone Asia/Yekaterinburg
 # Установка nginx
 
 ```
-		sudo apt-get install nginx
+sudo apt-get install nginx
 ```		
 
 # Настройка nginx
