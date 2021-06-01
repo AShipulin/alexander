@@ -33,16 +33,26 @@ toc: true
 
 Получим список дисков
 ```
-yc compute disk list > c:\tmp\disk_list
+yc compute disk list
+```
+чтобы получить с метками воспользуемся ConvertFrom-Json
+```
+(yc compute disk list --format json | ConvertFrom-Json) | Select id,name,status,labels
 ```
 
 Дискам в зависимости от цели установим метки (labels)
-- snapshot-default
-- snapshot-critical
+- snapshot-default - все диски для которых выполняются снимки
+- snapshot-critical - только те диски для которых нужно выполнять снимки чаще
 
 ```
+yc compute disk update --id <id диска> --labels snapshot-default=14 --labels snapshot-critical=7
 yc compute disk update --id <id диска> --labels snapshot-default=14
-yc compute disk update --id <id диска> --labels snapshot-critical=7
+```
+
+Если потребуется удалить labels
+```
+yc compute disk remove-labels --id <id диска> --labels snapshot-default
+yc compute disk remove-labels --id <id диска> --labels snapshot-critical
 ```
 
 ## Создадим функции
@@ -232,3 +242,6 @@ Cron-выражение: 00 18 ? * 1 *
 
 Cron-выражение: 00 12 ? * * *
 Функция: delete-snapshot-lifecycle
+
+## Просмотр моментальных снимков
+(yc compute snapshot list --format json | ConvertFrom-Json) | Select id,name,labels,status
