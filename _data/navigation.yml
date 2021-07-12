@@ -62,6 +62,8 @@ docs:
 
       - title: "Обновление (upgrade)"
         url: /docs/ubuntu/upgrade
+      - title: "Использование SSH"
+        url: /docs/ubuntu/ssh
       - title: "Память (memory)"
         url: /docs/ubuntu/memory
       - title: "Файл подачик (swap)"
