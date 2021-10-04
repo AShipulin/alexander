@@ -62,4 +62,27 @@ sudo echo "zabbix  ALL=(root) NOPASSWD: /usr/bin/nmap" >> /etc/sudoers
 sudo systemctl enable zabbix-agent
 sudo service zabbix-agent start
 ```
+
 Важно! Первый раз нужно сделать перезапуск агента.
+```
+sudo service zabbix-agent restart
+```
+
+
+## Проверка агента
+
+Запускаем проверка с сервера zabbix
+```
+nc -v -z <> 10050
+```
+
+
+Откроем порт
+```
+iptables -A INPUT -s 10.129.0.29/32 -p tcp -m tcp --dport 10050 -j ACCEPT
+```
+
+Сохраним правила
+```
+iptables-save > /etc/iptables/rules.v4
+```
