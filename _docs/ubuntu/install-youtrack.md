@@ -10,7 +10,7 @@ toc: true
 
 Обновление репозиториев, установка коммандера, редактора и временной зоны
 ```
-sudo apt-get update    
+sudo apt-get update
 sudo apt-get install mc
 sudo apt-get install nano
 sudo timedatectl set-timezone Asia/Yekaterinburg
@@ -32,7 +32,7 @@ sudo apt-get install java
 
 Установка JRE (Java Runtime Environment)
 ```
-apt install default-jre
+sudo apt install default-jre
 ```
 
 ## Установка пакета rng-tools
@@ -50,7 +50,7 @@ sudo apt-get install rng-tools
 
 Создание пользователя для запуска службы YouTrack
 ```
-adduser youtrack --disabled-password
+sudo adduser youtrack --disabled-password
 ```
 
 ### 2. Загрузка релиза
