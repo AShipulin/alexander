@@ -68,21 +68,25 @@ sudo service zabbix-agent start
 sudo service zabbix-agent restart
 ```
 
-
 ## Проверка агента
 
-Запускаем проверка с сервера zabbix
+Проверка что агент запущен
 ```
-nc -v -z <> 10050
-```
-
-
-Откроем порт
-```
-iptables -A INPUT -s 10.129.0.29/32 -p tcp -m tcp --dport 10050 -j ACCEPT
+ps aux | grep zabbix
 ```
 
-Сохраним правила
+Проверка доступности агента с сервера
 ```
+nc -v -z <IP Агента> 10050
+```
+
+Проверка доступности сервера с агента
+```
+nc -v -z <IP Агента> 10051
+```
+
+Открытие порта если не доступен
+```
+iptables -A INPUT -s <IP Сервера>32 -p tcp -m tcp --dport 10050 -j ACCEPT
 iptables-save > /etc/iptables/rules.v4
 ```
