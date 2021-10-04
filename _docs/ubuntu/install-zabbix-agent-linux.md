@@ -68,11 +68,21 @@ sudo service zabbix-agent start
 sudo service zabbix-agent restart
 ```
 
+Перезагрузка агента
+```
+systemctl reload zabbix-agent
+```
+
 ## Проверка агента
 
 Проверка что агент запущен
 ```
 ps aux | grep zabbix
+```
+
+Проверка статуса
+```
+systemctl status zabbix-agent
 ```
 
 Проверка доступности агента с сервера
