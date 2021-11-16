@@ -70,6 +70,8 @@ docs:
         url: /docs/ubuntu/memory
       - title: "Файл подачик (swap)"
         url: /docs/ubuntu/swap
+      - title: "Переопределение размера диска"
+      - url: /docs/ubuntu/resize2fs/        
 
       - title: "Файловый сервер (samba)"
         url: /docs/ubuntu/file-server
