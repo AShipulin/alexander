@@ -1,6 +1,6 @@
 ---
 title: "Опыт работы с datalens"
-date: 2021-04-18
+date: 2021-12-22
 toc: true
 categories:
   - Статья
@@ -9,4 +9,4 @@ tags:
 ---
 
 Скоро туту будет статья
-{{iframe src="https://datalens.yandex.ru/vmf0lcyzgpp4o-rezultativnost-vuzov-rf"}}
+<iframesrc="https://datalens.yandex.ru/vmf0lcyzgpp4o-rezultativnost-vuzov-rf"}} frameborder="0" </iframe>
