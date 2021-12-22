@@ -9,4 +9,8 @@ tags:
 ---
 
 Скоро туту будет статья
-<iframe src="https://datalens.yandex.ru/vmf0lcyzgpp4o-rezultativnost-vuzov-rf" frameborder="0" </iframe>
+
+Попытка 1
+<iframe src="https://datalens.yandex/vmf0lcyzgpp4o" frameborder="0" </iframe>
+
+<iframe title="Заголовок" width="1140" height="541.25" src="https://datalens.yandex/vmf0lcyzgpp4o" frameborder="0" allowFullScreen="true"></iframe>
