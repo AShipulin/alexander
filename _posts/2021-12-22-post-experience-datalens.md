@@ -10,7 +10,4 @@ tags:
 
 Скоро туту будет статья
 
-Попытка 1
-<iframe src="https://datalens.yandex/vmf0lcyzgpp4o" frameborder="0" </iframe>
-
-<iframe title="Заголовок" width="1140" height="541.25" src="https://datalens.yandex/vmf0lcyzgpp4o" frameborder="0" allowFullScreen="true"></iframe>
+<iframe width="1140" height="541.25" src="https://datalens.yandex/vmf0lcyzgpp4o" frameborder="0" allowFullScreen="true"></iframe>
