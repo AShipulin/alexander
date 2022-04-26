@@ -72,7 +72,6 @@ docs:
         url: /docs/ubuntu/swap
       - title: "Переопределение размера диска"
       - url: /docs/ubuntu/resize2fs/        
-
       - title: "Файловый сервер (samba)"
         url: /docs/ubuntu/file-server
       - title: "FTP сервер"
@@ -83,7 +82,6 @@ docs:
         url: /docs/ubuntu/s3fs
       - title: "Монтироание диска (mount)"
         url: /docs/ubuntu/mount
-
       - title: "install-nginx"
         url: /docs/ubuntu/install-nginx
       - title: "install-postgresql"
