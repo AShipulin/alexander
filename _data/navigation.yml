@@ -71,7 +71,7 @@ docs:
       - title: "Файл подачик (swap)"
         url: /docs/ubuntu/swap
       - title: "Переопределение размера диска"
-      - url: /docs/ubuntu/resize2fs/        
+      - url: /docs/ubuntu/resize2fs/
       - title: "Файловый сервер (samba)"
         url: /docs/ubuntu/file-server
       - title: "FTP сервер"
@@ -82,19 +82,21 @@ docs:
         url: /docs/ubuntu/s3fs
       - title: "Монтироание диска (mount)"
         url: /docs/ubuntu/mount
-      - title: "install-nginx"
-        url: /docs/ubuntu/install-nginx
-      - title: "install-postgresql"
-        url: /docs/ubuntu/install-postgresql
-      - title: "install-redmine"
-        url: /docs/ubuntu/install-redmine
-      - title: "install-youtrack"
-        url: /docs/ubuntu/install-youtrack
-      - title: "install-zabbix"
-        url: /docs/ubuntu/install-zabbix
-      - title: "- agent-linux"
-        url: /docs/ubuntu/install-zabbix-agent-linux
-      - title: "- agent-windows"
-        url: /docs/ubuntu/install-zabbix-agent-windows
-      - title: "- pg-monitoring"
-        url: /docs/ubuntu/install-zabbix-pg-monitoring
+      - title: "nginx"
+        url: /docs/ubuntu/nginx
+      - title: "postgresql"
+        url: /docs/ubuntu/postgresql
+      - title: "redmine"
+        url: /docs/ubuntu/redmine
+      - title: "youtrack"
+        url: /docs/ubuntu/youtrack
+      - title: "gitlab"
+        url: /docs/ubuntu/gitlab
+      - title: "zabbix"
+        url: /docs/ubuntu/zabbix
+      - title: "-linux"
+        url: /docs/ubuntu/zabbix-agent-linux
+      - title: "-windows"
+        url: /docs/ubuntu/zabbix-agent-windows
+      - title: "-pg-monitoring"
+        url: /docs/ubuntu/zabbix-pg-monitoring
