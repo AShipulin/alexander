@@ -1,6 +1,6 @@
 ---
-title: "install-zabbix-agent-windows"
-permalink: /docs/ubuntu/install-zabbix-agent-windows/
+title: "zabbix-agent-windows"
+permalink: /docs/ubuntu/zabbix-agent-windows/
 toc: true
 ---
 

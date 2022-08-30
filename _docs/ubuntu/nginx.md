@@ -1,6 +1,6 @@
 ---
-title: "install-nginx"
-permalink: /docs/ubuntu/install-nginx/
+title: "nginx"
+permalink: /docs/ubuntu/nginx/
 toc: true
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: "install-zabbix-pg-monitoring"
-permalink: /docs/ubuntu/install-zabbix-pg-monitoring/
+title: "zabbix-pg-monitoring"
+permalink: /docs/ubuntu/zabbix-pg-monitoring/
 toc: true
 ---
 

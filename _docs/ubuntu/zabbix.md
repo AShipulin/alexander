@@ -1,6 +1,6 @@
 ---
-title: "install-zabbix"
-permalink: /docs/ubuntu/install-zabbix/
+title: "zabbix"
+permalink: /docs/ubuntu/zabbix/
 toc: true
 ---
 

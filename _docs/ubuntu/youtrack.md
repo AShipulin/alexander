@@ -1,6 +1,6 @@
 ---
-title: "install-youtrack"
-permalink: /docs/ubuntu/install-youtrack/
+title: "youtrack"
+permalink: /docs/ubuntu/youtrack/
 toc: true
 ---
 
