@@ -1,6 +1,6 @@
 ---
 title: "GitLab CE"
-permalink: /docs/ubuntu/GitLab/
+permalink: /docs/ubuntu/gitlab/
 toc: true
 ---
 
